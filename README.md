@@ -1,6 +1,6 @@
 # Task 1 - Network Intrusion Detection using Machine Learning
 
-## 📋 Overview
+## Overview
 
 This project implements a **binary classification model** for detecting network intrusions using the **KDD Cup 1999 dataset**. The model distinguishes between normal network traffic and attack traffic, which is critical for Security Operations Center (SOC) and SIEM integration.
 
@@ -10,7 +10,7 @@ This project implements a **binary classification model** for detecting network 
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 1. Build a production-ready ML model for network intrusion detection
 2. Achieve high recall to minimize missed attacks (false negatives)
@@ -20,7 +20,7 @@ This project implements a **binary classification model** for detecting network 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Task-1/
@@ -33,7 +33,7 @@ Task-1/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -80,7 +80,7 @@ The notebook is structured into 12 sections:
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 ### Expected Results (on test set):
 
@@ -100,7 +100,7 @@ The notebook is structured into 12 sections:
 
 ---
 
-## 🔍 Dataset Information
+## Dataset Information
 
 **Source**: [KDD Cup 1999 - Network Intrusion Detection](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
 
@@ -120,7 +120,7 @@ The notebook is structured into 12 sections:
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### Preprocessing Pipeline:
 1. **Categorical Features** (f1, f2, f3): One-Hot Encoding
@@ -138,7 +138,7 @@ The notebook is structured into 12 sections:
 
 ---
 
-## 💾 Model Deployment
+##  Model Deployment
 
 ### Saved Artifacts:
 
@@ -170,7 +170,7 @@ for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
 
 ---
 
-## 🔗 SIEM Integration Guidelines
+##  SIEM Integration Guidelines
 
 ### Integration Approach:
 
@@ -194,7 +194,7 @@ for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
 
 ---
 
-## 📈 Evaluation Visualizations
+##  Evaluation Visualizations
 
 The notebook generates the following visualizations:
 
@@ -206,7 +206,7 @@ The notebook generates the following visualizations:
 
 ---
 
-## 🛠️ Customization and Extensions
+##  Customization and Extensions
 
 ### Hyperparameter Tuning:
 
@@ -239,7 +239,7 @@ To detect specific attack types (DoS, Probe, R2L, U2R):
 
 ---
 
-## 📚 Dependencies
+##  Dependencies
 
 Main libraries used:
 - **scikit-learn**: ML pipeline and Random Forest
@@ -250,35 +250,7 @@ Main libraries used:
 
 See `requirements.txt` for complete list with versions.
 
----
-
-## 🎓 Learning Outcomes
-
-This project demonstrates:
-
-✅ **Data Science Skills**:
-- Loading and exploring real-world datasets
-- Feature engineering and preprocessing
-- Building scikit-learn pipelines
-
-✅ **Machine Learning**:
-- Binary classification with Random Forest
-- Model evaluation with multiple metrics
-- Feature importance analysis
-
-✅ **Production Readiness**:
-- Model serialization and deployment
-- Reproducible environments
-- Documentation for stakeholders
-
-✅ **Cybersecurity Domain**:
-- Network intrusion detection
-- SOC/SIEM integration concepts
-- Balancing precision and recall for threat detection
-
----
-
-## 📝 Results Summary
+Results Summary
 
 After running the notebook, you should observe:
 
@@ -290,41 +262,3 @@ After running the notebook, you should observe:
 
 The model is **production-ready** and suitable for integration into SIEM systems for real-time threat detection.
 
----
-
-## 🤝 Contributing
-
-For improvements or extensions:
-1. Experiment with hyperparameter tuning
-2. Try ensemble methods (stacking, voting)
-3. Add SHAP explainability for individual predictions
-4. Implement online learning for model updates
-5. Create REST API for model serving
-
----
-
-## 📄 License
-
-This project uses the publicly available KDD Cup 1999 dataset. Model code is for educational and research purposes.
-
----
-
-## 📧 Contact
-
-For questions or feedback about this implementation:
-- Review the notebook comments for detailed explanations
-- Check scikit-learn documentation for API details
-- Refer to KDD Cup 1999 dataset documentation for feature descriptions
-
----
-
-## 🔖 References
-
-1. [KDD Cup 1999 Dataset](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
-2. [Scikit-learn Documentation](https://scikit-learn.org/)
-3. [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
-4. [Network Intrusion Detection Research](https://scholar.google.com/scholar?q=network+intrusion+detection+machine+learning)
-
----
-
-**Last Updated**: November 19, 2025
